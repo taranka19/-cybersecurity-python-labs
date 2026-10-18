@@ -1,0 +1,6 @@
+Target Resource,Security Score,Status,Missing Security Headers,Leaks
+https://secure.example.invalid/,100/100 (A+),PASS,None,None
+https://legacy.example.invalid/,25/100 (F),FAIL,"Strict-Transport-Security, Content-Security-Policy, X-Content-Type-Options",Server: Apache/2.4.49; X-Powered-By: PHP/7.4.3
+https://api.example.invalid/,75/100 (B),WARN,X-Frame-Options,Server: nginx/1.18.0
+https://portal.example.invalid/,100/100 (A+),PASS,None,None
+https://minimal.example.invalid/,0/100 (F),FAIL,"Strict-Transport-Security, Content-Security-Policy, X-Frame-Options, X-Content-Type-Options",Server: Microsoft-IIS/10.0

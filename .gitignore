@@ -1,0 +1,21 @@
+# Віртуальне оточення
+.venv/
+venv/
+ENV/
+
+# Кеш компілятора Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Налаштування середовищ розробки (PyCharm / VS Code)
+.idea/
+.vscode/
+
+# Тимчасові та службові файли ОС
+.DS_Store
+Thumbs.db
+
+# Згенеровані звіти, логи або файли бази даних
+labs/lab01/data/*.csv
+labs/lab01/data/*.json
