@@ -19,3 +19,6 @@ Thumbs.db
 # Згенеровані звіти, логи або файли бази даних
 labs/lab01/data/*.csv
 labs/lab01/data/*.json
+*.sqlite3
+
+*.sqlite3
