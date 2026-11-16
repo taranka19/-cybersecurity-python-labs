@@ -19,7 +19,7 @@ REQUIRED_SECURITY_HEADERS = [
     "X-Content-Type-Options",
 ]
 
-# Регулярний вираз для пошуку витоку версій (наприклад, Apache/2.4.49, PHP/7.4.3, 10.0)
+# Регулярний вираз для пошуку витоку версій
 VERSION_LEAK_REGEX = re.compile(r"\b\d+(\.\d+)+\b")
 
 
@@ -47,7 +47,7 @@ def evaluate_resource(
     url = item.get("url", "unknown")
     headers = item.get("headers", {})
 
-    # Нормалізуємо ключі заголовків до нижнього регістру для надійного пошуку
+    # Нормалізуємо ключі заголовків до нижнього регістру
     normalized_headers = {k.lower(): v for k, v in headers.items()}
 
     present_headers: list[str] = []
